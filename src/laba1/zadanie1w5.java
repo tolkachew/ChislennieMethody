@@ -25,7 +25,6 @@ public class zadanie1w5 {
             x = xn;
             count++;
         } while (temp > e);
-
         return x - func(x) / prfunc(x);
     }
 }

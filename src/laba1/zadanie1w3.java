@@ -10,7 +10,7 @@ public class zadanie1w3 {
     }
 
     // Решение методом деления отрезка пополам
-    public static double  solve(double start, double end){
+    public static double solve(double start, double end){
         if(end - start <= 0.001){
             return start;
         }
