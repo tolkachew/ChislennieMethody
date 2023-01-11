@@ -12,7 +12,9 @@ public class zadanie1w1 {
     public static ArrayList<Double> secondF = new ArrayList<>();
 
     public static double func(Double x){
-        return Math.log(x)-(1/x);}
+        return Math.log(x)-1/x;
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter left border");
@@ -23,6 +25,7 @@ public class zadanie1w1 {
         h = scanner.nextDouble();
 
         double inter = a;
+
         if (a < b) {
             while (inter < b){
                 listInt.add(inter);
@@ -51,9 +54,9 @@ public class zadanie1w1 {
             }
         } else System.out.println("Неправильные границы");
 
-
-        for (int i = 0; i <listInt.size(); i++) {
+        for (int i = 0; i <listInt.size()-1; i++) {
             System.out.printf("%d: X: %.2f ,f(x)\'-right : %.2f ,f(x)\'-left : %.2f ,f(x)\'-center : %.2f ,f(x)\'' : %.2f \n", i+1,listInt.get(i),rightF.get(i),leftF.get(i),centerF.get(i),secondF.get(i));
         }
+
     }
 }
