@@ -16,7 +16,6 @@ public class zadanie1w1 {
                         {2.4, -5.5, 8.6, 14.7};
 
         // Метод Гаусса
-
         int N = n;
         for (int p = 0; p < N; p++) {
 
@@ -48,7 +47,6 @@ public class zadanie1w1 {
                     A[i][j] -= alpha * A[p][j];
 
                 }
-
             }
 
             //Вывод матрицы
